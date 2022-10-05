@@ -17,6 +17,8 @@ import java.util.EnumSet;
 /**
  * @author Immedicable
  * @version 1.0.0
+ * Main class that adds the listeners for all events/commands.
+ * Each event/command checks if the message contains or equals a certain string.
  */
 public class Bot extends ListenerAdapter
 {

@@ -13,6 +13,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 /**
  * @author Immedicable
  * @version 1.0.0
+ * Emoji reactions to owner names
  */
 public class OwnerReact extends ListenerAdapter
 {
@@ -21,7 +22,7 @@ public class OwnerReact extends ListenerAdapter
     @Override
     public void onMessageReceived(final MessageReceivedEvent event) {
         final String[] split;
-        final String[] message = split = event.getMessage().getContentRaw().split("\\s+");
+        split = event.getMessage().getContentRaw().split("\\s+");
         for (final String element : split) {
             if (element.equalsIgnoreCase("immedicable")) {
                 final Message message2 = event.getMessage();

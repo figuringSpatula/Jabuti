@@ -11,6 +11,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 /**
  * @author Immedicable
  * @version 1.0.0
+ * Commands related to the OldFacs Minecraft server
  */
 public class MinecraftServerCommands extends ListenerAdapter
 {

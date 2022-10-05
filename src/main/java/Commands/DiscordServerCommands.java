@@ -16,6 +16,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 /**
  * @author Immedicable
  * @version 1.0.0
+ * Commands related to the OldFacs Discord server
  */
 public class DiscordServerCommands extends ListenerAdapter
 {

@@ -11,6 +11,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 /**
  * @author Immedicable
  * @version 1.0.0
+ * Sets the activity of the bot (discord status)
  */
 public class Status extends ListenerAdapter
 {

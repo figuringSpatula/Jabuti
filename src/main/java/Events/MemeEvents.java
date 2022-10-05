@@ -11,15 +11,19 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 /**
  * @author Immedicable
  * @version 1.0.0
+ * Funny responses
  */
 public class MemeEvents extends ListenerAdapter
 {
     @Override
     public void onMessageReceived(final MessageReceivedEvent event) {
         final String input = event.getMessage().getContentRaw();
+
+        // Pick out each word from the message, removing the whitespaces
         final String[] messageReceived = input.split("\\s+");
         final String name = event.getMember().getUser().getName();
         for (final String messageElement : messageReceived) {
+            // Bot doesn't reply to itself (unfunny)
             if (!event.getMember().getUser().isBot()) {
                 if (messageElement.equalsIgnoreCase("sex")) {
                     event.getChannel().sendMessage("*Sex is not enabled on this server, " + name + "*").queue();
